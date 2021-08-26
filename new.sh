@@ -1,3 +1,8 @@
+# ZSH configuration
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+cp zsh_config/.zshrc ~/
+
 # Vi configuration
 git clone https://github.com/Garco97/vi.git
 mv vi ~/.vim
@@ -5,8 +10,5 @@ cd ~
 cp .vim/.vimrc .
 cd .vim
 ./previm.sh
-
-# ZSH configuration
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-chsh -s `which zsh`
-cp zsh_config/.zshrc ~/
+echo 'alias vi="gvim"' >> ~/.zshrc
+echo 'alias vim="gvim"' >> ~/.zshrc
