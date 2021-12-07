@@ -1,7 +1,8 @@
 # ZSH configuration
+sudo apt install zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s `which zsh`
-cp zsh_config/.zshrc ~/
+cp zsh_conf/.zshrc ~/
 
 # Vi configuration
 git clone https://github.com/Garco97/vi.git
